@@ -10,6 +10,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-      
+        "midtrans/midtrans-php": "^2.5"
     }
 }
