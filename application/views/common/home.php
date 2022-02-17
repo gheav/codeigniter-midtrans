@@ -9,3 +9,8 @@
         <img src="<?= base_url('assets/images/midtrans.jpg'); ?>" class="img-fluid" alt="Midtrans Logo" width="30%">
     </div>
 </div>
+
+<hr>
+<div class="text-center">
+    <a href="<?= base_url('snap'); ?> " class="badge bg-primary text-decoration-none">Snap Method</a>
+</div>
