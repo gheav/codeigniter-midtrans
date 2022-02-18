@@ -8,4 +8,10 @@ class Home extends CI_Controller
 			'content' => 'common/home'
 		]);
 	}
+	public function MockPayment()
+	{
+		$this->load->view('layouts/main', [
+			'content' => 'common/mockPayment'
+		]);
+	}
 }

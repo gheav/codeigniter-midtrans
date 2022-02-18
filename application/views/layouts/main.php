@@ -19,7 +19,31 @@
 
 <body>
     <div class="container">
-        <div class="card mt-5">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="<?= base_url(); ?> "> <img src="<?= base_url('assets/images/codeigniter.jpg'); ?>" class="img-fluid" alt="Codeigniter Logo" width="50" height="24"> CI-Midtrans</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('snap'); ?> ">Snap Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('MobileSDK'); ?> ">Mobile SDK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('CoreApi'); ?> ">Core API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= base_url('MockPayment'); ?> ">Mock Payment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="card mt-2">
             <div class="card-body">
                 <?php $this->load->view($content); ?>
             </div>
