@@ -8,7 +8,7 @@
         <h5>Endpoint</h5>
         <p>
             There is only one endpoint that are required to use Midtrans mobile SDK:
-            <b>http://localhost:8000/MobileSDK/charge</b>
+            <b><?= base_url() ?>MobileSDK/charge</b>
             <br>
             This endpoint will proxy (forward) client request to Midtrans Snap API
         <pre>'https://app.midtrans.com/snap/v1/transactions'</pre> or
@@ -24,7 +24,7 @@
 }</pre>
         <h5>Testing</h5>
         <p>You can mock client's request by executing this CURL command to the
-            <b>http://localhost:8000/MobileSDK/charge</b> endpoint:
+            <b><?= base_url() ?>MobileSDK/charge</b> endpoint:
         </p>
         <pre>
 curl -X POST -d '{  
@@ -32,7 +32,7 @@ curl -X POST -d '{
       "order_id":"mobile-12345",
       "gross_amount":280000
    }
-}' "http://localhost:8000/MobileSDk/charge"
+}' "<?= base_url() ?>MobileSDk/charge"
         </pre>
 
     </div>
