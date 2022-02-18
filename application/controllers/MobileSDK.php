@@ -14,7 +14,9 @@ class MobileSDK extends CI_Controller
     }
     public function index()
     {
-        echo "This is function to merchant server if you using Mobile SDK";
+        $this->load->view('layouts/main', [
+            'content' => 'midtrans/charge'
+        ]);
     }
 
     public function charge()

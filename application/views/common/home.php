@@ -13,4 +13,5 @@
 <hr>
 <div class="text-center">
     <a href="<?= base_url('snap'); ?> " class="badge bg-primary text-decoration-none">Snap Method</a>
+    <a href="<?= base_url('MobileSDK'); ?> " class="badge bg-primary text-decoration-none">Merchant Server for Mobile SDK</a>
 </div>
