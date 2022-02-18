@@ -16,6 +16,11 @@ class Snap extends CI_Controller
     }
     public function index()
     {
+        if (strpos(\Midtrans\Config::$serverKey, 'YOUR ') != false) {
+            echo "<p style='background: #CC0000; padding: 10px;color:white'>";
+            echo "Please set your server key in file " . __FILE__;
+            echo "</p>";
+        }
         $this->load->view('layouts/main', [
             'orderID' => rand(),
             'content' => 'midtrans/snap'
